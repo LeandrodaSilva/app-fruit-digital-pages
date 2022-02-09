@@ -1,0 +1,8 @@
+.fruitPage {
+    display: flex;
+    justify-content: center;
+}
+
+.fruitPage > div {
+    max-width: 800px;
+}

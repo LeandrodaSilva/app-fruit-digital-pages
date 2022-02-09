@@ -1,0 +1,45 @@
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.69);
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    height: 80px;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+    box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+header nav {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav h1 {
+    font-family: 'Quintessential', cursive;
+    font-size: 2rem;
+}
+
+header nav .backButton {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    position: fixed;
+    left: 10%;
+}
+
+header nav .backButton:hover {
+    cursor: pointer;
+}
+
+header nav .backButton:hover span  {
+    color: blue;
+}
