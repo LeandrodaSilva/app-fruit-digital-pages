@@ -19,8 +19,9 @@ function Fruit() {
   }
 
   useEffect(() => {
-    getFruit()
-  }, [])
+    if (!fruit)
+      getFruit()
+  }, [fruit, getFruit])
 
   return (
     <Layout>
