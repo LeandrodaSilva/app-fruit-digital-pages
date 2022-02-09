@@ -1,10 +1,12 @@
 {
   "hosting": {
+    "site": "app-fruit-digital-pages",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
-  }
+  },
+
 }
