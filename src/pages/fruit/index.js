@@ -10,13 +10,12 @@ import "./styles.css"
 function Fruit() {
   let params = useParams();
   const [fruit, setFruit] = useState(null);
-
-  const getFruit = async () => {
+  const getFruit = React.useCallback(async () => {
     let res = await fruitService.findOneByName(params.name);
 
     if (res)
       setFruit(res)
-  }
+  }, [params.name]);
 
   useEffect(() => {
     if (!fruit)
